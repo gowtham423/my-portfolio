@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen Kumar A | Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Naveen Kumar A - Full Stack Developer with 1 year of experience specializing in React, Node.js, TypeScript, SQL, and AWS.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Elements -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo"></a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Naveen Kumar A</span></h1>
+                    <h2 class="hero-typing-container">I'm a..<span id="typing-text" class="accent-text"></span><span class="typed-cursor">|</span></h2>
+                    <p class="hero-description">
+                        Full Stack Developer with 1 year of experience building and maintaining web applications using <strong>React</strong>, <strong>JavaScript</strong>, and <strong>Node.js</strong>. Dedicated to writing clean, optimized, and scalable code.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Let's Connect <i class="fa-solid fa-paper-plane"></i></a>
+                        <a href="#projects" class="btn btn-secondary">View Work <i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a-752103225" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:naveenkumararunachalam97@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/Naveen1652003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-frame">
+                        <div class="profile-glow"></div>
+                        <div class="avatar-placeholder">
+                            <!-- Replace the src with your image file path (e.g. assets/profile.jpg) -->
+                            <img id="profile-img" class="profile-image" src="IMG_20260818_194617.jpg" alt="Naveen Kumar" loading="lazy" decoding="async" onerror="this.style.display='none'">
+                            <!-- Fallback SVG kept for users without the image file -->
+                            <svg class="avatar-fallback" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--accent-color)" />
+                                        <stop offset="100%" stop-color="var(--accent-secondary)" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="90" fill="url(#avatar-grad)" opacity="0.08"/>
+                                <path d="M100 60 C70 60 65 90 65 105 C65 120 80 135 100 135 C120 135 135 120 135 105 C135 90 130 60 100 60 Z" fill="url(#avatar-grad)"/>
+                                <path d="M45 170 C45 140 75 130 100 130 C125 130 155 140 155 170 C155 180 140 190 100 190 C60 190 45 180 45 170 Z" fill="url(#avatar-grad)" opacity="0.85"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>Full Stack Developer based in Tamil Nadu, India</h3>
+                        <p>
+                            I specialize in end-to-end web development, working across the frontend and backend to deliver robust and high-performing software. From crafting intuitive user interfaces with <strong>React.js</strong> to designing RESTful APIs in <strong>Node.js</strong> and scaling databases with <strong>MySQL</strong>, I enjoy solving complex structural challenges.
+                        </p>
+                        <p>
+                            Having recently completed a Bachelor of Engineering in Computer Science and an internship, followed by a professional role at Jothi Software, I've practicalized deployment workflows using <strong>AWS</strong> and <strong>GCP</strong>. I value modularity, code quality, and fast load times.
+                        </p>
+                        <div class="quick-facts">
+                            <div class="fact-card">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span><strong>Experience</strong><br>1 Year Active</span>
+                            </div>
+                            <div class="fact-card">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span><strong>Education</strong><br>B.E. CSE</span>
+                            </div>
+                            <div class="fact-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span><strong>Location</strong><br>Chennai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details">
+                        <div class="glass-panel details-card">
+                            <h3>Key Details</h3>
+                            <ul class="details-list">
+                                <li><strong>Full Name:</strong> Naveen Kumar A</li>
+                                <li><strong>Date of Birth:</strong> 16-05-2003</li>
+                                <li><strong>Address:</strong> Chennai</li>
+                            </ul>
+                            <div class="details-cta">
+                                <a href="mailto:naveenkumararunachalam97@gmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                                <a href="tel:+918610825251" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <!-- Skill Tabs Nav -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="all">All</button>
+                    <button class="tab-btn" data-tab="frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="backend">Backend</button>
+                    <button class="tab-btn" data-tab="database">Database</button>
+                    <button class="tab-btn" data-tab="cloud-devops">Cloud & DevOps</button>
+                    <button class="tab-btn" data-tab="tools-practices">Tools & Practices</button>
+                </div>
+
+                <!-- Skill Cards Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card glass-panel" data-category="frontend">
+                        <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
+                        <h4 class="skill-name">React.js</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="frontend">
+                        <div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div>
+                        <h4 class="skill-name">JavaScript</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="frontend">
+                        <div class="skill-icon"><i class="devicon-html5-plain colored"></i></div>
+                        <h4 class="skill-name">HTML5</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="frontend">
+                        <div class="skill-icon"><i class="devicon-css3-plain colored"></i></div>
+                        <h4 class="skill-name">CSS3</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="frontend">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group text-blue"></i></div>
+                        <h4 class="skill-name">Ant Design</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-card glass-panel" data-category="backend">
+                        <div class="skill-icon"><i class="devicon-nodejs-plain colored"></i></div>
+                        <h4 class="skill-name">Node.js</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="backend">
+                        <div class="skill-icon"><i class="devicon-typescript-plain colored"></i></div>
+                        <h4 class="skill-name">TypeScript</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-card glass-panel" data-category="database">
+                        <div class="skill-icon"><i class="devicon-mysql-plain colored"></i></div>
+                        <h4 class="skill-name">SQL (MySQL)</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card glass-panel" data-category="cloud-devops">
+                        <div class="skill-icon"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div>
+                        <h4 class="skill-name">AWS (S3, Lambda)</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="cloud-devops">
+                        <div class="skill-icon"><i class="devicon-googlecloud-plain colored"></i></div>
+                        <h4 class="skill-name">GCP (Basic)</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+
+                    <!-- Tools & Practices -->
+                    <div class="skill-card glass-panel" data-category="tools-practices">
+                        <div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+                        <h4 class="skill-name">Git</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="tools-practices">
+                        <div class="skill-icon"><i class="fa-solid fa-code-fork text-blue"></i></div>
+                        <h4 class="skill-name">Sourcetree</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="tools-practices">
+                        <div class="skill-icon"><i class="devicon-vscode-plain colored"></i></div>
+                        <h4 class="skill-name">VS Code</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="tools-practices">
+                        <div class="skill-icon"><i class="fa-solid fa-circle-nodes text-orange"></i></div>
+                        <h4 class="skill-name">Postman</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="tools-practices">
+                        <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h4 class="skill-name">SDLC</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-card glass-panel" data-category="tools-practices">
+                        <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4 class="skill-name">Unit Testing / JUnit</h4>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Timeline Section -->
+        <section id="experience" class="experience-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Journey</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Item 1 (Current Role) -->
+                    <div class="timeline-item timeline-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">April 2025 – Present</span>
+                            <h3 class="timeline-role">Full Stack Developer</h3>
+                            <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Jothi Software Private Limited, Chennai</h4>
+                            <ul class="timeline-bullets">
+                                <li>Developed and maintained responsive web applications using React, HTML, CSS, and JavaScript.</li>
+                                <li>Integrated frontend components with backend services using Node.js.</li>
+                                <li>Managed application data using MySQL, performing CRUD operations and optimizing queries.</li>
+                                <li>Deployed, tested, and monitored applications on AWS for high availability.</li>
+                                <li>Collaborated with senior developers and cross-functional teams to debug and resolve issues.</li>
+                                <li>Followed best practices for clean, maintainable code and participated in code reviews.</li>
+                                <li>Used Git and Sourcetree for version control and team collaboration.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 (Internship) -->
+                    <div class="timeline-item timeline-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Jan 2025 – Mar 2025</span>
+                            <h3 class="timeline-role">Software Development Intern</h3>
+                            <h4 class="timeline-company"><i class="fa-solid fa-building"></i> KY Technologies</h4>
+                            <ul class="timeline-bullets">
+                                <li>Worked as a Software Development Intern, gaining hands-on industry exposure.</li>
+                                <li>Gained practical experience in real-time projects and active team collaboration.</li>
+                                <li>Implemented modules under senior supervision, focusing on JavaScript frameworks and API integrations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects & Portfolio</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 (Primary Resume Project) -->
+                    <div class="project-card glass-panel">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder-visual project-color-blue">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                            </div>
+                            <span class="project-badge">Featured</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Books Stock Inventory Management System</h3>
+                            <p class="project-desc">
+                                A web-based inventory system built to optimize stock tracking, restocking alerts, reporting, and high availability deployment on AWS.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MySQL</span>
+                                <span>AWS</span>
+                                <span>TypeScript</span>
+                            </div>
+                            <button class="btn btn-secondary project-detail-btn" data-project="books-inventory">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Additional Mock Project to enrich portfolio visual balance) -->
+                    <div class="project-card glass-panel">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder-visual project-color-purple">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <span class="project-badge">Development</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Developer Portfolio Website</h3>
+                            <p class="project-desc">
+                                A premium responsive glassmorphic portfolio site designed to display developer resumes, skills, and experience with custom animations.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Glassmorphism</span>
+                            </div>
+                            <button class="btn btn-secondary project-detail-btn" data-project="dev-portfolio">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Additional Mock Project representing node/sql/aws skills) -->
+                    <div class="project-card glass-panel">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder-visual project-color-cyan">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+                            <span class="project-badge">Cloud</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Serverless File Processing Service</h3>
+                            <p class="project-desc">
+                                A serverless utility utilizing AWS Lambda, S3 triggers, and Node.js to automatically convert, optimize, and catalog media files.
+                            </p>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>AWS Lambda</span>
+                                <span>S3</span>
+                                <span>TypeScript</span>
+                            </div>
+                            <button class="btn btn-secondary project-detail-btn" data-project="serverless-media">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="education-grid">
+                    <!-- B.E -->
+                    <div class="education-card glass-panel">
+                        <div class="edu-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <span class="edu-year">2020 - 2024</span>
+                        <h3>Bachelor of Engineering (CSE)</h3>
+                        <h4 class="edu-inst">Muthayammal Engineering College (Autonomous), Rasipuram</h4>
+                        <p class="edu-univ">Affiliated to Anna University</p>
+                        <div class="edu-grade">CGPA: <strong>8.86 / 10</strong></div>
+                    </div>
+                    
+                    <!-- HSC -->
+                    <div class="education-card glass-panel">
+                        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                        <span class="edu-year">2018 - 2020</span>
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <h4 class="edu-inst">Vidhya Nikethan Matric Hr. Sec. School, Rasipuram</h4>
+                        <p class="edu-univ">Tamil Nadu State Board</p>
+                        <div class="edu-grade">Percentage: <strong>78.16%</strong></div>
+                    </div>
+
+                    <!-- SSLC -->
+                    <div class="education-card glass-panel">
+                        <div class="edu-icon"><i class="fa-solid fa-school-flag"></i></div>
+                        <span class="edu-year">2018</span>
+                        <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                        <h4 class="edu-inst">Vidhya Nikethan Matric Hr. Sec. School, Rasipuram</h4>
+                        <p class="edu-univ">Tamil Nadu State Board</p>
+                        <div class="edu-grade">Percentage: <strong>77.40%</strong></div>
+                    </div>
+                </div>
+
+                <!-- Certifications Card -->
+                <div class="certifications-panel glass-panel">
+                    <h3><i class="fa-solid fa-certificate text-gold"></i> Professional Certifications</h3>
+                    <div class="certs-list">
+                        <div class="cert-item">
+                            <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h4>Web Development Certification</h4>
+                                <p>Comprehensive training on core web architectures, frontend responsiveness, and database integration.</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h4>Cloud Computing Certification</h4>
+                                <p>Covering public cloud structures, deployment strategies, serverless setups, and virtual storage (AWS & GCP).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h3>Let's talk about your next project</h3>
+                        <p>
+                            Feel free to reach out for career opportunities, collaboration possibilities, or just to say hello. I'll get back to you as soon as possible!
+                        </p>
+                        
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="ci-content">
+                                    <span>Email</span>
+                                    <a href="mailto:naveenkumararunachalam97@gmail.com">naveenkumararunachalam97@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="ci-content">
+                                    <span>Phone</span>
+                                    <a href="tel:+918610825251">+91 861082 5251</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="ci-content">
+                                    <span>Location</span>
+                                    <p>Namakkal, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="ci-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div class="ci-content">
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/naveen-kumar-a-752103225" target="_blank" rel="noopener noreferrer">Naveen Kumar A</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel glass-panel">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="form-name" name="name" required placeholder=" " class="form-input">
+                                <label for="form-name" class="form-label">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="form-email" name="email" required placeholder=" " class="form-input">
+                                <label for="form-email" class="form-label">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="form-subject" name="subject" required placeholder=" " class="form-input">
+                                <label for="form-subject" class="form-label">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" name="message" required rows="5" placeholder=" " class="form-input"></textarea>
+                                <label for="form-message" class="form-label">Message</label>
+                            </div>
+                            <div class="form-group services-group">
+                                <label class="form-label">Services</label>
+                                <div class="services-options">
+                                    <label><input type="checkbox" name="services" value="Web Development"> Web Development</label>
+                                    <label><input type="checkbox" name="services" value="Backend / APIs"> Backend / APIs</label>
+                                    <label><input type="checkbox" name="services" value="UI/UX Design"> UI/UX Design</label>
+                                    <label><input type="checkbox" name="services" value="DevOps / Cloud"> DevOps / Cloud</label>
+                                    <label><input type="checkbox" name="services" value="Other"> Other</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit-btn">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Naveen Kumar A. All Rights Reserved.
+            <br>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a-752103225" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" placeholder="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:naveenkumararunachalam97@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/Naveen1652003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            </p> 
+                            <br>
+                            
+
+                        
+            
+            
+            
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-project-details">
+                <!-- Injected via Javascript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
